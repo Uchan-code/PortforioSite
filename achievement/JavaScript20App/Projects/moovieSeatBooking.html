@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieSeatBooking</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="movie-seat-booking">
+
+    <div id="main">
+        <div class="main-wrapper">
+            <div class="movie-select-container">
+                <label for="pick-movie">Pick&nbsp;a&nbsp;movie:</label>
+                <select name="movie" id="selected-movie">
+                    <option value="Avengers">Avengers :5$</option>
+                    <option value="ToyStory">ToyStory :7$</option>
+                    <option value="HalleyPotter">HalleyPotter :10$</option>
+                </select>
+            </div>
+            <div class="seat-situation">
+                <ul class="seat-situation__list">
+                    <li class="seat-situation__vacant">
+                        <span class="seat"></span>
+                        <small>Blank</small>
+                    </li>
+                    <li class="seat-situation__selected">
+                        <span class="seat selected"></span>
+                        <small>Selected</small>
+                    </li>
+                    <li class="seat-situation__occupied">
+                        <span class="seat occupied"></span>
+                        <small>occupied</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="screen-hall">
+                <div class="screen"></div>
+                <div class="screen-hall-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="screen-hall-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="screen-hall-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="screen-hall-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="screen-hall-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                </div>
+                <div class="screen-hall-seats">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+            <p class="payment-amount">
+                You have Selected
+                <span id="selected-count">0</span>
+                seats for a price of $
+                <span id="selected-cash">0</span>
+            </p>
+        </div>
+    </div>
+    
+    <script src="./js/movieSeatBooking.js" defer></script>
+</body>
+</html>

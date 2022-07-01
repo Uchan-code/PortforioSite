@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>PortForio Site</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="header-wrapper">
+            <canvas id="canvas"></canvas>
+                <!-- 
+                    3,  canvas
+                -->
+            <h1>
+                <span class="header-title">
+                    こんにちは！
+                </span>
+                <span class="header-title">
+                    私のポートフォリオを見てくださってありがとうございます！
+                </span>
+                <span class="header-title">
+                    スクロールすると自己紹介が始まります！
+                </span>
+            </h1>
+
+            <div class="navigate">
+                <p>Please&nbsp;Scroll</p>
+                <i class="arrow-down">
+                    <span></span>
+                    <span></span>
+                </i>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <div id="main">
+        <div class="main-background"></div>
+        <div class="main-wrapper">
+            <div id="introduction">
+                <div class="introduction-wrapper">
+                    <h2>自己紹介</h2>
+                    <div class="introduction-content">
+                        <img class="introduction-image" src="./assets/profile.jpg" alt="self-introduction">
+                        <h3>垣地&nbsp;優輔</h3>
+                        <p>
+                            一九九六年一月三日富山県氷見市生まれ、高校大学では電気電子工学へ進学。<br>
+                            その後、一部上場の医療機器メーカーのフィールドエンジニアとして就職。
+                        </p>
+                        <p>
+                            日々の業務では、丁寧な仕事と顧客から相談しやすい、されやすい環境作りを心がけ
+                            思いがけない受注に繋がる事もありました。
+                        </p>
+                        <p>
+                            趣味は、釣り・カラオケ・楽器で、最近はカメラも始めました。
+                        </p>
+
+                        <h3>私の思い</h3>
+                        <p>
+                            三人兄弟の末っ子として生まれ、いつも兄弟の後ろについていくことが多かった私は
+                            何にでも興味を示し、周りのやっていることの真似ばかりをしていました。しかし負けず嫌いであったこともあり、兄弟であっても生意気にも喧嘩ばかりしていました。
+                        </p>
+                        <p>
+                            そんな兄の背中を追い、同じ高校に進学し&nbsp;真面目な兄&nbsp;と&nbsp;生意気な弟&nbsp;と比較されることの多い高校生活でしたが
+                            級友や先輩方に恵まれ、笑顔の絶えない生活でした。
+                        </p>
+                        <p>
+                            高校大学では、吹奏楽部に所属し全国大会で金賞を取れたことは今でも良い思い出です。
+                        </p>
+                        <p>
+                            ですがそれ以上に、小さな部ながらもリーダーを任され後輩の育成や悩みを考える。組織全体の在り方を考えることが今でも活かされている最も良い経験だったと考えます。
+                        </p>
+                        <p>
+                            就職してからは、今までと全く違う医療という分野。看護士から医師といった幅広い役職の顧客感情に苦戦しながらも
+                            相手の潜在ニーズを捉え、真摯に対応する事を心がけながらも親しみやすい人柄であり続けることを意識し、
+                            「垣地さんだからお願いしたいよ」と嬉しい言葉を頂くことも多くなりました。
+                        </p>
+                        <p>
+                            これからも相手目線で物事を考えることを第一とし、業務に励みたいと思います。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="abillity">
+                <div class="abillity-wrapper">
+                    <h2>できること</h2>
+                    <ul class="abillity-list__item">
+                        <li class="html">
+                            <img class="icon" src="./assets/logos/HTML5_Logo_256.png" alt="html-logo">
+                            <div class="abillity-item__explanation">
+                                <h3>HTML</h3>
+                                <p>
+                                    html記述のルールを理解し<br>
+                                    見やすいhtmlのコードを書くことができます。<br>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="css">
+                            <img class="icon" src="./assets/logos/CSS logo.png" alt="css-logo">
+                            <div class="abillity-item__explanation">
+                                <h3>CSS</h3>
+                                <p>
+                                    BEM命名規則に基づいたCSS設計をすることで保守性に優れたCSSを書くことができます。
+                                    よく命名時の単語名を悩んでいます....。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="js">
+                            <img class="icon" src="./assets/logos/javascript-logo.png" alt="javascript-logo">
+                            <div class="abillity-item__explanation">
+                                <h3>JavaScript</h3>
+                                <p>
+                                    ライブラリに頼らないVanilla&nbsp;JSを書くことができます。
+                                    dataクラスやAPIの利用、フェードインやスライドといったアニメーションを実装することができます。
+                                    （ライブラリを使用しての実装もできます。）
+                                </p>
+                            </div>
+                        </li>
+                        <li class="sass">
+                            <img class="icon" src="./assets/logos/Sass Logo (Color).png" alt="sass-logo">
+                            <div class="abillity-item__explanation">
+                                <h3>Sass</h3>
+                                <p>
+                                    SCSSを利用したコーディングができます。ネストやincludeを用いたコーディングを行います。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="git">
+                            <img class="icon" src="./assets/logos/GitHub-Mark-120px-plus.png" alt="github-logo">
+                            <div class="abillity-item__explanation">
+                                <h3>GitHub</h3>
+                                <p>
+                                    GitHubの基本的な操作をすることができ、共同開発をすることができます。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="docker">
+                            <img class="icon" src="./assets/logos/docker logo.webp" alt="docker-logo">
+                            <div class="abillity-item__explanation">
+                                <h3>Docker</h3>
+                                <p>
+                                    基本的な操作をすることはできますが、まだまだ勉強中です。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div id="works">
+                <h2>制作物</h2>
+                <div class="works-wrapper">
+                    <div class="works-content democlinic">
+                        <img data-mw="modalwindow" class="works-image" src="./assets/demoClinic.png" alt="democlinic">
+                        <div class="works-explanation">
+                            <h3>クリニックの模擬LP</h3>
+                            <p class="works-content__text">
+                                架空のクリニックのHPです。フェードインアニメーションやスライダーアニメーションを
+                                使用し、全体的に丸みを帯びたレイアウトが特徴的です。
+                            </p>
+                            <div class="button-area">
+                                <button class="view-image">全体画像を見る</button>
+                                <a href="../achievement/CLsitePractice/index.html">
+                                    <button class="view-site">サイトを見る</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works-content architects">
+                        <img data-mw="modalwindow" class="works-image" src="./assets/co-designstudio.png" alt="architects">
+                        <div class="works-explanation">
+                            <h3>Co-design&nbsp;Studioの模写</h3>
+                            <p class="works-content__text">
+                                Co-designStudio様のHP模写です。シンプルなレイアウトですが、実績(works)では
+                                スクロールアニメーションを使用。ナビゲーションメニューやメニューボタンの実装
+                                もされています。
+                            </p>
+                            <div class="button-area">
+                                <button class="view-image">全体画像を見る</button>
+                                <a href="../achievement/co-designstudio/index.html">
+                                    <button class="view-site">サイトを見る</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works-content js-webapps">
+                        <img class="works-image js-apps" src="./assets/20+JSApps.png" alt="JSApps">
+                        <div class="works-explanation">
+                            <h3>20+&nbsp;JavaScript&nbsp;Apps</h3>
+                            <p class="works-content__text">
+                                JavaScriptを使用した小さなアプリケーションです。
+                                全てVanillaJSで記述し、お問い合わせフォームや通貨レート計算などの
+                                アプリケーションがあります。※更新中
+                            </p>
+                            <div class="button-area">
+                                <a href="../achievement/JavaScript20App/main.html">
+                                    <button class="view-site">サイトを見る</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mwとはmodalwindowのこと -->
+    <div class="mw" id="modalwindow">
+        <div class="mw-overlay"></div>
+
+        <div class="mw-container">
+            <img id="mw-image" src="" alt="">
+            <div id="mw-controller"></div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <img class="introduction-image" src="./assets/profile.jpg" alt="home">
+            <div class="footer-wrapper-inner">
+                <h3>垣地&nbsp;優輔</h3>
+                <ul class="contact-list">
+                    <li>
+                        <a href="https://github.com/Uchan-code">
+                            <img src="./assets/logos/GitHub-Mark-64px.png" alt="git-icon">
+                            <p>GitHub</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:shocking.white.0103@gmail.com">
+                            <img src="./assets/logos/mail_icon-icons.com_61254.png" alt="mail-icon">
+                            <p>Email</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/main.js" defer></script>
+    <script src="./js/lightbox.js" defer></script>
+</body>
+</html>

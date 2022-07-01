@@ -1,0 +1,281 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    font-size: 10px;
+}
+
+.contact{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+
+    padding: 3vw 5vw;
+
+    text-align: center;
+
+    border: 1px solid #808080;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px #808080;
+}
+
+.form-title{
+    font-size: 2rem;
+}
+
+.form-area{
+    margin: 0 0 2rem 0;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #808080;
+    margin: 0.5rem 0;
+}
+
+input{
+    width: 95%;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.2rem 0;
+    border: #b4b4b4 solid 3px;
+    border-radius: 5px;
+}
+
+small{
+    height: 1rem;
+    width: 100%;
+
+    color: #ff0000;
+
+    visibility: hidden;
+}
+
+small#submit-message{
+    color: #000000;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    background-color: #0088ff;
+
+    color: #ffffff;
+    font-size: 1.5rem;
+
+    padding: 1rem;
+
+    width: 100%;
+
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+// movieseatbooking
+
+#movie-seat-booking{
+    background-color: #001a31;
+}
+
+.movie-select-container{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.seat-situation{
+    border-radius: 10px;
+    background-color: #00071a;
+}
+
+.seat{
+    display: block;
+    width: 15px;
+    height: 12px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #808080;
+    transition: 0.1s;
+
+    
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+}
+
+
+.selected{
+    background-color: #00ffff;
+
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+.occupied{
+    background-color: #ffffff;
+
+    &:hover{
+        transform: scale(1);
+        cursor: default;
+    }
+}
+
+.seat-situation__list{
+    width: 15vw;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+
+    li{
+        display: flex;
+        justify-content: space-around;
+        width: 5vw;
+    }
+
+    small{
+        visibility: visible;
+        color: #ffffff;
+        width: auto;
+    }
+}
+
+.screen-hall{
+    perspective: 1000px;
+    padding: 0 2.5vw;
+}
+
+.screen{
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    transform: rotateX(-45deg);
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 10px #ffffff;
+}
+
+.screen-hall-seats{
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(10,1fr);
+    margin-bottom: 5px;
+    gap: 2px;
+}
+
+.payment-amount{
+    text-align: center;
+    word-spacing: 0.1rem;
+    color: #ffffff;
+}
+
+// customvideoplayer
+
+body#custom-video-player{
+    background-color: #001a31;
+    text-align: center;
+}
+
+.video-player__title{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.video-handler{
+    display: flex;
+    align-items: center;
+}
+
+.video-handler__icon{
+    display: block;
+    width: 10%;
+    height: 50px;
+
+    background-image: url(../../assets/playing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.video-handler__icon.playing{
+    background-image: url(../../assets/pause.png);
+}
+
+.video-seekbar{
+    width: 75%;
+    transition: 0.025s;
+    padding: 0;
+    margin: 1rem;
+}
+
+.video-play-time{
+    width: 10%;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+// exchange-rate-calculator
+
+.rate-calculator__title{
+    font-size: 2rem;
+}
+
+.calculator-wrapper{
+    p{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+.rates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    select{
+        margin: 1rem 0;
+        width: 20%;
+        padding: 5px 0;
+    }
+}
+
+.swap{
+    display: flex;
+    justify-content: space-between;
+}
+
+#swap-button{
+    width: 20%;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.currency{
+    display: flex;
+    justify-content: space-between;
+}

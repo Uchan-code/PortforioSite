@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- main -->
+    <div id="contact" class="contact">
+        <h2 class="form-title">お問い合わせフォーム</h2>
+        <div class="form-area">
+            <div class="form-control">
+                <label for="username">
+                    Username
+                </label>
+                <input type="text" id="username" placeholder="お名前を入力してください">
+                <small id="username-errormessage">ErrorMessage</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">
+                    Email
+                </label>
+                <input type="text" id="email" placeholder="メールアドレスを入力してください">
+                <small id="email-errormessage">ErrorMessage</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">
+                    Password
+                </label>
+                <input type="password" id="password" placeholder="パスワードを入力してください">
+                <small id="password-errormessage">ErrorMessage</small>
+            </div>
+
+            <div class="form-control">
+                <label for="confirm-password">
+                    Confirm&nbsp;Password
+                </label>
+                <input type="password" id="confirm-password" placeholder="もう一度 パスワードを入力してください">
+                <small id="confirmpassword-errormessage">ErrorMessage</small>
+            </div>
+            
+        </div>
+        <button id="submit">Submit</button>
+        <small id="submit-message">送信されました</small>
+    </div>
+    
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
